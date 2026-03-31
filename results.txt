@@ -1,2 +1,0 @@
-cat_2.jpg | Confidence: 1.0000
-cat_1.jpeg | Confidence: 0.8667

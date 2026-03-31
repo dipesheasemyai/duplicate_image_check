@@ -3,3 +3,4 @@ selected_images/
 histogram_comparsion.py
 image_file.py
 ResNet_model.py
+result/

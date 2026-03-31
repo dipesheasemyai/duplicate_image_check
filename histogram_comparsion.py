@@ -2,9 +2,9 @@
 import cv2
 # import numpy as np
 
-image1 = "/home/easemyai/Documents/image_detection/selected_images/cat_1.jpeg"
+image1 = "/home/easemyai/Documents/image_detection/safety_ai.v1i.coco/train/00126_jpg.rf.5de92bbee8ba1e5ab0778437b8e549f2.jpg"
 
-image2 = "/home/easemyai/Documents/image_detection/selected_images/cat_1.jpeg"
+image2 = "/home/easemyai/Documents/image_detection/safety_ai.v1i.coco/train/00126_jpg.rf.9b48709c91cb6d5988a506c78e007d12.jpg"
 
 gray_img1 = cv2.imread(image1, cv2.IMREAD_GRAYSCALE)
 gray_img2 = cv2.imread(image2, cv2.IMREAD_GRAYSCALE)
