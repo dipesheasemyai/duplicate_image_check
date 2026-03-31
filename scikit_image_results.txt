@@ -1,0 +1,1 @@
+cat_1.jpeg | Confidence: 1.0000
