@@ -6,9 +6,9 @@ import numpy as np
 
 # --- CONFIG ---
 folder = "/home/easemyai/Documents/image_detection/safety_ai.v1i.coco/train"
-results_folder = "result_duplicates_final2"
+results_folder = "result_image_duplicate"
 os.makedirs(results_folder, exist_ok=True)
-output_txt = os.path.join(results_folder, "duplicates_only.txt")
+output_txt = os.path.join(results_folder, "duplicates_image_list.txt")
 
 RESIZE_DIM = (256, 256)
 THRESHOLD = 1
