@@ -1,7 +1,7 @@
 import os 
 
 folder = "/home/easemyai/Documents/image_detection/safety_ai.v1i.coco/train"
-results_folder = "result_duplicates_final1/duplicates_only.txt"
+results_folder = "duplicate_image_folder/result_duplicate_image_list.txt"
 
 to_delete = []
 
