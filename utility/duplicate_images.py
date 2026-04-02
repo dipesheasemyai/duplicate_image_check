@@ -1,20 +1,11 @@
 import os
 import cv2
-import re
-# from skimage.metrics import structural_similarity as ssim
 import numpy as np
 
-# --- CONFIG ---
-folder = "/home/easemyai/Documents/image_detection/safety_ai.v1i.coco/train"
-results_folder = "result_image_duplicate"
-os.makedirs(results_folder, exist_ok=True)
-output_txt = os.path.join(results_folder, "duplicates_image_list.txt")
-
-RESIZE_DIM = (256, 256)
-THRESHOLD = 1
 
 
 def load_image(path):
+    RESIZE_DIM = (256, 256)
     img = cv2.imread(path)
     if img is None:
         return None
@@ -83,6 +74,12 @@ def choose_original(group, folder_path):
 
 # --- MAIN FUNCTION ---
 def find_duplicates(folder):
+
+    results_folder = "result_image_duplicate"
+    os.makedirs(results_folder, exist_ok=True)
+    output_txt = os.path.join(results_folder, "duplicates_image_list.txt")
+
+    THRESHOLD = 1
     image_files = [
         f for f in os.listdir(folder)
         if f.lower().endswith(('.jpg', '.jpeg', '.png'))
@@ -135,6 +132,3 @@ def find_duplicates(folder):
     print(f"\n Duplicates saved in: {output_txt}")
 
 
-# --- RUN ---
-if __name__ == "__main__":
-    find_duplicates(folder)
